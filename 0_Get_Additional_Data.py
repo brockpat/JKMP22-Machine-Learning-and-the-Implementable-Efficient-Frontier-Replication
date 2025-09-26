@@ -8,7 +8,7 @@ Download Daily Stock Return Data from WRDS
 """
 
 #%% Path
-path = "C:/Users/pf122/Desktop/Uni/Frankfurt/2023-24/Machine Learning/Single Authored/"
+path = "...Single Authored/"
 
 folder = "JKMP_22_Replication/"
 
@@ -164,3 +164,4 @@ print("Table renamed from 'crsp_daily_excess' to 'd_ret_ex'.")
 
 
 myDataBase.close()
+
