@@ -13,7 +13,7 @@ from datetime import date, timedelta
 
 
 
-path = "C:/Users/pf122/Desktop/Uni/Frankfurt/2023-24/Machine Learning/Single Authored/JKMP_22_Replication/"
+path = "...JKMP_22_Replication/"
 
 Constituents = (pd.read_csv(path + "Data/SP500_Historical_Constituents.csv",
                             parse_dates = ['start', 'ending','date'])
@@ -126,4 +126,5 @@ while current_start < end_date:
     current_start = current_end + timedelta(days=1)
 
 print("Processing db_crsp_daily_SP500 complete.")
+
 
