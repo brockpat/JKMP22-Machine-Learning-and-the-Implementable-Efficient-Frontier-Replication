@@ -304,12 +304,6 @@ for d in tqdm([date for date in calc_dates], desc="Calculating factor covariance
     cov_data = fct_ret[(fct_ret['date'] >= first_obs) & (fct_ret['date'] <= d)]
     
     t = len(cov_data)
-    
-    """
-    I believe it is wrong how JKMP compute the following, as the weights in the correlation
-    matrix are mixed with the weights from the variance matrix.
-    See also: https://chatgpt.com/share/6808cfe4-1758-8003-9a0f-816c0bde45a4
-    """
     #====================
     # JKMP IMPLEMENTATION
     #=====================
@@ -501,4 +495,5 @@ for d in tqdm(calc_dates, desc="Calculating Barra Cov"):
 #%% Save Dictionaries       
 with open(path + '/Data/Barra_Cov.pkl', 'wb') as f:
     pickle.dump(barra_cov, f)
+
 
